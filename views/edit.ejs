@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="user_click">
+        <!-- <a class="h1" href="/">All User</a> -->
+    </div>
+    <section class="section">
+        <div class="box">
+        <h3 class="h3">Edit Users</h3>
+        <form class="forms" action="/update/<%= user._id %>" method="post">
+            <input class="cs" type="text" name="name" placeholder="Name" value="<%= user.name %>">
+            <input class=" cs " type="text" name="email" placeholder="Email" value="<%= user.email %>">
+            <input class=" cs " type="text" name="image" placeholder="Image url" value="<%= user.image %>">
+            <input class=" cs submit" type="submit" value="Update user">
+        </form>
+    </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
